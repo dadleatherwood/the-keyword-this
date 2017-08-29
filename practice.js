@@ -2,16 +2,22 @@
   // 1) What is the purpose of the 'this keyword'?
 
       //Answer
-//to access the context of the function
+      //to access the context of the function
+
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
       //Answer
-//automatic to the global, on an object, hand defined by using .call or .apply
+      //Rule #1: Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+      //Rule #2:  Whenever a function is called by a preceding dot, the object before that dot is this.
+      //Rule #3:  Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+      //Rule #4:  Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+      //REFERENCE:  https://john-dugan.com/this-in-javascript/
+
   // 3) What is the difference between call and apply?
 
       //Answer
-//call is just invoked, and NO new funtion is created, The call() method calls a function with a given this value and arguments provided INDIVIDUALLY
-//The apply() method calls a function with a given this value, and arguments provided as an ARRAY
+      //call is just invoked, and NO new funtion is created, The call() method calls a function with a given this value and arguments provided INDIVIDUALLY
+     //The apply() method calls a function with a given this value, and arguments provided as an ARRAY
   // 4) What does .bind do?
 
       //Answer
