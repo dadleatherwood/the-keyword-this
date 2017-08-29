@@ -10,11 +10,13 @@
   // 3) What is the difference between call and apply?
 
       //Answer
-//call is just invoked, and NO new funtion is created
+//call is just invoked, and NO new funtion is created, The call() method calls a function with a given this value and arguments provided INDIVIDUALLY
+//The apply() method calls a function with a given this value, and arguments provided as an ARRAY
   // 4) What does .bind do?
 
       //Answer
-//takes a function and binds it to a context you give it.
+      //The bind() method creates A NEW FUNCTION that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.  Calling f.bind(someObject) creates a new function with the same body and scope as f, but where this occurs in the original function, in the new function it is permanently bound to the first argument of bind, regardless of how the function is being used.
+      //takes a function and binds it to a context you give it.
 
 //Next Problem
 
@@ -84,7 +86,6 @@ var myUser = {
   return this.username;
  }
 };
-
 
 
 var userName = myUser.getMyUsername();
